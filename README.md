@@ -24,15 +24,13 @@ The objective of this project is to predict a continuous output (price of a hous
 - The model assumes a linear relationship between the input feature (house size) and the output (house price).
 - The linear equation used is:
 
-\[
-y = w \cdot x + b
-\]
+$y = w \cdot x + b$
 
 Where:
-- \( y \) is the predicted price.
-- \( x \) is the input feature (house size).
-- \( w \) is the weight (slope).
-- \( b \) is the bias (y-intercept).
+- $y$ is the predicted price.
+- $x$ is the input feature (house size).
+- $w$ is the weight (slope).
+- $b$ is the bias (y-intercept).
 
 ## 2. Data Collection
 
@@ -50,9 +48,7 @@ The dataset used in this example consists of five data points with one feature:
 
 If we assume an initial weight \( w = 0.5 \) and bias \( b = 50 \), the prediction for a house size \( x = 750 \) is:
 
-\[
-y = 0.5 \cdot 750 + 50 = 375 + 50 = 425 \text{ k$}
-\]
+$y = 0.5 \cdot 750 + 50 = 375 + 50 = 425 \text{ k}$$
 
 ## 3. Data Preprocessing
 
