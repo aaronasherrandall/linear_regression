@@ -158,7 +158,7 @@ plt.text(min(X) + 150, max(y) - 25, f'R²: {r2:.2f}', fontsize=12, color='black'
 # Show the plot
 plt.show()
 ```
-Show Image Here ![Petal Length vs Petal Width](plot.png)
+![Petal Length vs Petal Width](plot.png)
 
 
 ## Conclusion
