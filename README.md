@@ -4,18 +4,18 @@ This repository contains a detailed example of applying linear regression to a s
 
 ## Table of Contents
 
-- [1: Problem Definition](#step-1-problem-definition)
-- [2: Data Collection](#step-2-data-collection)
-- [3: Data Preprocessing](#step-3-data-preprocessing)
-- [4: Splitting the Data](#step-4-splitting-the-data)
-- [5: Choose a Model](#step-5-choose-a-model)
-- [6: Train the Model](#step-6-train-the-model)
-- [7: Evaluate the Model](#step-7-evaluate-the-model)
-- [8: Calculating the Performance Metrics](#step-8-calculating-the-performance-metrics)
-- [9: Plotting the Results](#step-9-plotting-the-results)
-- [Conclusion](#conclusion)
+1. [Problem Definition](#1-problem-definition)
+2. [Data Collection](#2-data-collection)
+3. [Data Preprocessing](#3-data-preprocessing)
+4. [Splitting the Data](#4-splitting-the-data)
+5. [Choose a Model](#5-choose-a-model)
+6. [Train the Model](#6-train-the-model)
+7. [Evaluate the Model](#7-evaluate-the-model)
+8. [Calculating the Performance Metrics](#8-calculating-the-performance-metrics)
+9. [Plotting the Results](#9-plotting-the-results)
+10. [Conclusion](conclusion)
 
-## 1: Problem Definition
+## 1. Problem Definition
 
 The objective of this project is to predict a continuous output (price of a house) based on input features (size of a house).
 
@@ -34,7 +34,7 @@ Where:
 - \( w \) is the weight (slope).
 - \( b \) is the bias (y-intercept).
 
-## 2: Data Collection
+## 2. Data Collection
 
 The dataset used in this example consists of five data points with one feature:
 
@@ -54,11 +54,11 @@ If we assume an initial weight \( w = 0.5 \) and bias \( b = 50 \), the predicti
 y = 0.5 \cdot 750 + 50 = 375 + 50 = 425 \text{ k$}
 \]
 
-## 3: Data Preprocessing
+## 3. Data Preprocessing
 
 For this example, the data is already clean and ready to be used for training.
 
-## Step 4: Splitting the Data
+## 4. Splitting the Data
 
 We split the dataset into training (80%) and testing (20%) sets using `train_test_split` from `sklearn`.
 
@@ -74,11 +74,11 @@ y = np.array([150, 180, 200, 220, 300])  # Prices
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 ```
 
-## 5: Choose a Model
+## 5. Choose a Model
 
 We'll use a simple linear regression model, which fits a straight line to the data.
 
-## 6: Train the Model
+## 6. Train the Model
 
 We train the linear regression model on the training data.
 
@@ -92,7 +92,7 @@ model = LinearRegression()
 model.fit(X_train, y_train)
 ```
 
-## 7: Evaluate the Model
+## 7. Evaluate the Model
 
 After training, we evaluate the model's performance on the testing set.
 
@@ -111,7 +111,7 @@ Actual Price: 180k, Predicted Price: 174.29k
 Actual Price: 300k, Predicted Price: 268.57k
 ```
 
-## 8: Calculating the Performance Metrics
+## 8. Calculating the Performance Metrics
 
 We calculate the Mean Squared Error (MSE) and R-squared (R²) to evaluate how well the model performs.
 
@@ -133,7 +133,7 @@ Mean Squared Error: 510.20
 R-squared: 0.86
 ```
 
-## 9: Plotting the Results
+## 9. Plotting the Results
 
 To visualize the results, we plot the training data, testing data, and the regression line.
 
