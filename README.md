@@ -102,7 +102,7 @@ for i in range(len(y_test)):
 ```
 
 ### Output:
-```python
+```bash
 Actual Price: 180k, Predicted Price: 174.29k
 Actual Price: 300k, Predicted Price: 268.57k
 ```
@@ -124,7 +124,7 @@ print(f"R-squared: {r2:.2f}")
 ```
 
 ### Output:
-```python
+```bash
 Mean Squared Error: 510.20
 R-squared: 0.86
 ```
